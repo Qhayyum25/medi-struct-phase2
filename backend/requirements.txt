@@ -1,0 +1,34 @@
+# --- Core (Stage 1) ---
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+SQLAlchemy>=2.0.30,<3.0
+psycopg2-binary>=2.9
+alembic>=1.13
+pydantic>=2.7,<3.0
+pydantic-settings>=2.3
+email-validator>=2.1
+python-dotenv>=1.0
+python-multipart>=0.0.9
+PyJWT>=2.8
+bcrypt>=4.1
+
+# --- Document extraction (Stage 2) ---
+PyMuPDF>=1.24
+python-docx>=1.1
+
+# --- Documents (Stage 2) ---
+PyMuPDF>=1.24.3
+python-docx>=1.1
+
+# --- NLP (Stage 3) ---
+torch>=2.2
+transformers>=4.44,<6
+
+# --- Analytics (Stage 4) ---
+pandas>=2.2
+scikit-learn>=1.5
+mlxtend>=0.23
+
+# --- Testing ---
+pytest>=8.0
+httpx>=0.27
